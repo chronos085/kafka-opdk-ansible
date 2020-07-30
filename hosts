@@ -1,0 +1,13 @@
+# Define IP addresses for list of Planet nodes
+[all]
+kafka_000 ansible_host=xx.xx.xx.xx
+kafka_001 ansible_host=xx.xx.xx.xx
+kafka_002 ansible_host=xx.xx.xx.xx
+
+# Inventory Group for nodes Zookeeper
+[zookeeper]
+kafka_00[0:2]
+
+# Inventory Group for nodes Kafka
+[kafka_broker]
+kafka_00[0:2]

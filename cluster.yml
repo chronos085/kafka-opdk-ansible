@@ -1,4 +1,10 @@
 ---
+- name: install java
+  hosts: all
+  become: true
+  roles:
+    - role: kafka-opdk-java
+
 - name: install zookeeper
   hosts: zookeeper
   become: true
