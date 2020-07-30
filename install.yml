@@ -1,0 +1,12 @@
+---
+- name: install zookeeper
+  hosts: zookeeper
+  become: true
+  roles:
+    - role: kafka-opdk-zookeeper
+
+- name: install kafka broker
+  hosts: kafka_broker
+  become: true
+  roles:
+    - role: kafka-opdk-installer

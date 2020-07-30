@@ -1,0 +1,7 @@
+---
+# Ansible Roles for Install kafka
+- src: https://github.com/chronos085/kafka-opdk-java.git
+
+- src: https://github.com/chronos085/kafka-opdk-zookeeper.git
+
+- src: https://github.com/chronos085/kafka-opdk-installer.git
